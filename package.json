@@ -1,0 +1,17 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "dev": "nodemon --watch src/ -e ts --exec ts-node ./src/person.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "HaloHuang",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
