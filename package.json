@@ -12,6 +12,7 @@
   "author": "HaloHuang",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "ts-node": "^10.9.1"
   }
 }
