@@ -1,16 +1,18 @@
 import OrderDetail from './orderDetail';
 // TS中引用类型的属性，比如一笔订单里头多个订单详情例子
 class Order {
-    public orderId: number = 0;
-    public orderDetailList: Array<OrderDetail> = []; // Array 引用类型属性, 每个值都是OrderDetail类对象
-    public date: Date = new Date();
-    public custName: string = 'nocustName'; // default
+    // 知识点：给构造器的参数加上public，参数就变成了属性
+    // 等同于：1、用public定义了一个属性 2、默认的构造函数会给这个属性赋值（隐式操作）
+    // public orderId: number;
+    // public orderDetailList: Array<OrderDetail>; // Array 引用类型属性, 每个值都是OrderDetail类对象
+    // public date: Date;
+    // public custName: string; // default
 
-    constructor(orderId_: number, orderDetailList_: Array<OrderDetail>, date_: Date, custName_: string) {
-        this.orderId = orderId_;
-        this.orderDetailList = orderDetailList_;
-        this.date = date_;
-        this.custName = custName_;
+    constructor(public orderId_: number, public orderDetailList_: Array<OrderDetail>, public date_: Date, public custName_: string) {
+        // this.orderId = orderId_;
+        // this.orderDetailList = orde rDetailList_;
+        // this.date = date_;
+        // this.custName = custName_;
     }
 }
 
